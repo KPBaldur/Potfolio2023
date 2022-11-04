@@ -1,0 +1,106 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, 'Open Sans', sans-serif;
+    background: #343434;
+}
+
+/*-- ---------- ---------- HEADER ---------- ---------- --*/
+/*--------------------------------------------------------*/
+
+header .container {
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    margin: auto;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .simbolo {
+    color: blueviolet;
+    transition: all 0.7s;
+}
+
+
+
+header .container h2 {
+    color: #fff;
+    user-select: none;
+    transition: all 0.7s;
+}
+
+header .container h2:hover {
+    color: blueviolet;
+    user-select: none;
+    transition: all 0.7s;
+}
+
+header .container .simbolo:hover {
+    color: #fff;
+    transition: all 0.7s;
+}
+
+header .container ul {
+    list-style: none;
+    display: flex;
+}
+
+header .container a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.7s;
+}
+
+header .container .opcion-header {
+    margin: 0 20px;
+    background: transparent;
+    border: 2px solid transparent ;
+    border-radius: 2px;
+    transition: all 0.9s;
+}
+
+header .container .opcion-header:hover {
+    border: 2px solid blueviolet ;
+    border-radius: 2px;
+}
+
+.separador {
+    width: 90%;
+}
+
+/*-- ---------- ---------- PRESENTACION ---------- ---------- --*/
+/*--------------------------------------------------------------*/
+
+.home {
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .presentacion {
+    width: 49%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .presentacion .parrafo-presentacion {
+    width: 400px;
+}
+
+header .home img{
+    display: inline-block;
+    width: 49%;
+    align-items: center;
+    justify-content: left;
+}
+
