@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, 
     initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+    <!-- Icon Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
     <link rel="stylesheet" href="css/style.css">
     
     <title>Kevin Pizarro Portfolio</title>
@@ -15,14 +19,42 @@
   <header class="header">
     <a href="#" class="logo">Logo Portafolio</a>
 
+    <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+
     <nav class="navbar">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Services</a>
-      <a href="">Portfolio</a>
-      <a href="">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
+
+  <!-- Seccion del home -->
+  <section class="home" id="home">
+  
+        <div class="home-content">
+          <h3>Hello, It's Me</h3>
+          <h1>Kevin Pizarro</h1>
+          <h3>And I'm a <span>Fronted Developer</span></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, 
+            praesentium exercitationem 
+              ipsam culpa enim deserunt similique libero.</p>
+              <div class="social-media">
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxs-palette'></i></a>
+              </div>
+              <a href="#" class="btn">Download CV</a>  
+        </div>
+    
+    <div class="home-img">
+      <img src="img/fotoYo.jpg" alt="">
+    </div>
+
+  </section>
+
 
 </body>
 <script src="script.js"></script>
