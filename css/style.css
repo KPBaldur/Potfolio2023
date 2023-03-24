@@ -184,3 +184,12 @@ span {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
+.services-container .services-box {
+  flex: 1 1 30rem;
+  background: var(--secondary-bg-color);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--bg-color);
+}
