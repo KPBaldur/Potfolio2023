@@ -1,103 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Estilos para el logo */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --bg-color: #1f242d;
+  --secondary-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
 .logo {
-    float: left;
-  }
-  .logo a {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease-in-out;
-  }
-  .logo a:hover {
-    color: #f00; /* Cambiar el color de la primera letra */
-  }
-  
-  /* Estilos para el menú de navegación */
-  nav {
-    float: right;
-  }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  nav li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  nav a {
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
-  }
-  nav a:hover {
-    background-color: #f00;  /*Cambiar el color de fondo*/ 
-   }
-  
-  /* Estilos para el menú responsivo */
-  @media (max-width: 750px) {
-    nav {
-      display: none;
-    }
-    nav.open {
-      display: block;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      background-color: #333;
-      z-index: 999;
-    }
-    nav.open ul {
-      display: block;
-      text-align: center;
-    }
-    nav.open li {
-      display: block;
-      margin: 0;
-    }
-    nav.open a {
-      display: inline-block;
-      padding: 10px;
-    }
-    .menu-toggle {
-      display: block;
-      float: right;
-      margin-top: 20px;
-      margin-right: 20px;
-      cursor: pointer;
-    }
-    .menu-toggle span,
-    .menu-toggle span:before,
-    .menu-toggle span:after {
-      display: block;
-      background-color: #333;
-      height: 3px;
-      width: 25px;
-      transition: transform 0.3s ease-in-out;
-    }
-    .menu-toggle span:before {
-      content: '';
-      transform: translateY(-8px);
-    }
-    .menu-toggle span:after {
-      content: '';
-      transform: translateY(8px);
-    }
-    .menu-toggle.open span {
-      transform: rotate(45deg);
-    }
-    .menu-toggle.open span:before {
-      transform: translateY(0) rotate(90deg);
-    }
-    .menu-toggle.open span:after {
-      transform: translateY(0) rotate(-90deg);
-    }
-  }
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
 
+.navbar a{
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  transition: .3s;
+}
 
+.navbar a:hover {
+  color: var(--main-color);
+}
