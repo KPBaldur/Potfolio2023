@@ -1,7 +1,7 @@
 /*#################################################################*/
 /*----------------------Menu Hamburguesa---------------------------*/
 let menuIcon = document.querySelector('#menu-icon');
-let  navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toogle('bx-x');
@@ -25,14 +25,14 @@ window.onscroll = () => {
         if(top >= offset && top < offset + height) {
             nabLinks.forEach(links => {
                 links.classList.remove('active');
-                document.querySelector('header nav a[href*=' +id +']').classList.add('active');
+                document.querySelector('header nav a[href*=' +id + ']').classList.add('active');
             });
         };
     });
 
     /*#################################################################*/
     /*----------------Stick Navbar----------------------*/
-    let header = document.querySelector('Header');
+    let header = document.querySelector('header');
 
     header.classList-toogle('sticky', window.scrollY > 100);
 }
