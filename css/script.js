@@ -3,10 +3,10 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = ("click", () => {
-    menuIcon.classList.toogle('menu-icon');
-    navbar.classList.toogle('active');
-});
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+};
 
 
 
@@ -34,7 +34,7 @@ window.onscroll = () => {
     /*----------------Stick Navbar----------------------*/
     let header = document.querySelector('header');
 
-    header.classList.toogle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 100);
 
     /*#################################################################*/
     /*----------------Ocultar Menu cuando selecciona opcion----------------------*/
