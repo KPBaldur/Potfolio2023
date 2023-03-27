@@ -34,7 +34,7 @@ window.onscroll = () => {
     /*----------------Stick Navbar----------------------*/
     let header = document.querySelector('header');
 
-    header.classList-toogle('sticky', window.scrollY > 100);
+    header.classList.toogle('sticky', window.scrollY > 100);
 
     /*#################################################################*/
     /*----------------Ocultar Menu cuando selecciona opcion----------------------*/
