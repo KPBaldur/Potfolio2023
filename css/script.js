@@ -59,6 +59,14 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*#################################################################*/
 /*----------------Efecto escritura---------------------------------*/
+const typado = new Typed('.texto-multiple',{
+    strings: ['Desarrollador Fronted', 'Diseñador UX/UI', 'Artista Conceptual', 'Modelador 3D'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    BackDelay: 100,
+    loop: true
+});
+
 const typed = new Typed('.multiple-text',{
     strings: ['Frontend Developer', 'UX/UI Designer', 'Concept Artist', '3D Modeler'],
     typeSpeed: 100,
