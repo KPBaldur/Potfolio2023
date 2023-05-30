@@ -193,8 +193,12 @@ span {
   margin: 2rem 0 3rem;
   max-height: 10rem;
   overflow: hidden;
+  transition: max-height 0.3s ease;
   
-  
+}
+
+.about-content p.limit-height.expand {
+  max-height: none;
 }
 
 /*###################################################*/

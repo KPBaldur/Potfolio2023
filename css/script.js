@@ -1,14 +1,57 @@
 /*#################################################################*/
 /*----------------------Menu Hamburguesa---------------------------*/
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+  menuIcon.classList.toggle('bx-x');
+  if (window.innerWidth <= 768) {
+    // Verificar si la ventana está en la vista móvil
+    if (navbar.style.display === 'none') {
+      navbar.style.display = 'block';
+    } else {
+      navbar.style.display = 'none';
+    }
+  }
 };
 
+// Agregar evento de escucha al documento
+document.addEventListener('click', function(event) {
+  // Verificar si el clic ocurrió dentro del menú o en el botón del menú
+  if (event.target.closest('.navbar') || event.target.closest('#menu-icon')) {
+    return; // Si el clic ocurrió dentro del menú o en el botón del menú, no hacer nada y mantenerlo abierto
+  }
 
+  // Si el clic ocurrió fuera del menú, cerrarlo solo en la vista móvil
+  if (window.innerWidth <= 768) {
+    menuIcon.classList.remove('bx-x');
+    navbar.style.display = 'none';
+  }
+});
+
+// Agregar evento de escucha al cambio de tamaño de la ventana
+window.addEventListener('resize', function() {
+  if (window.innerWidth > 768) {
+    // Si la ventana se redimensiona a la vista de escritorio, mostrar el menú
+    navbar.style.display = 'block';
+  } else {
+    // Si la ventana se redimensiona a la vista móvil, ocultar el menú
+    navbar.style.display = 'none';
+  }
+});
+
+
+
+/*#################################################################*/
+/*----------------Extender parrafos----------------------*/
+
+const parrafo = document.getElementById('parrafo');
+const btnLeerMas = document.querySelector('expand-btn');
+
+btnLeerMas.addEventListener('click', function () {
+  parrafo.style.maxHeight = '100rem' ;
+});
 
 /*#################################################################*/
 /*----------------Seccion activa en el Scroll----------------------*/

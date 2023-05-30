@@ -27,31 +27,22 @@
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
-      <a href=""><i class="fa-regular fa-language"></i></a>
     </nav>
   </header>
 
   <!-- Seccion del home -->
   <section class="home" id="home">
     <div class="home-content">
-      <h3>Hola!, yo soy</h3>
-      <h3 id="eng" style="display: none;">Hello!, It's Me</h3>
+      <h3 >Hola!, yo soy</h3>
       <h1>Kevin Pizarro</h1>
-      <h3 >Y yo soy <span class="texto-multiple"></span></h3>
-      <h3 id="eng" style="display: none;">And I'm a <span class="multiple-text"></span></h3>
+      <h3>Y yo soy <span class="texto-multiple"></span></h3>
       
-      <p id="esp">Soy apasionado por la tecnología y el diseño, con experiencia en el desarrollo 
+      <p>Soy apasionado por la tecnología y el diseño, con experiencia en el desarrollo 
         de soluciones web atractivas y eficientes. Mi objetivo es brindar una experiencia 
         de usuario excepcional a través de la combinación de arte y tecnología. Creo que 
         hoy en día la tecnología y el arte pueden coexistir de una manera brillante y 
         hermosa, entregando nuevas experiencias tanto para desarrolladores como para 
         usuarios.</p>
-
-      <p id="eng" style="display: none;">I am passionate about technology and design, 
-        with experience in developing attractive and efficient web solutions. My goal 
-        is to deliver an exceptional user experience through the combination of art and 
-        technology. I believe that today technology and art can coexist in a brilliant 
-        way and beautiful delivering new experiences for both developers and users.</p>
 
           <div class="social-media">
             <a href="https://www.linkedin.com/in/kevin-pizarro/"target="_blank"><i class='bx bxl-linkedin' ></i></a>
@@ -60,8 +51,7 @@
             <a href="https://www.artstation.com/onexoot" target="_blank"><i class='bx bxs-palette'></i></a>
           </div>
 
-          <a href="#" class="btn" id="esp">Descargar CV</a>
-          <a href="#" class="btn" id="eng" style="display: none;">Download CV</a>  
+          <a href="documents/CV-KP.pdf" target="_blank" class="esp btn">Descargar CV</a>
     </div>
     
     <div class="home-img">
@@ -75,15 +65,11 @@
     <div class="about-img">
       <img src="img/fotoYo.jpg" alt="Iam">
     </div>
-    <div class="about-content">
 
-      <h2 class="heading" id="esp">Sobre <span>Mi</span></h2>
-      <h2 class="heading" id="eng" style="display: none;">About <span>Me</span></h2>
-      
-      <h3 id="esp">Desarrollador Fronted - Diseñador UX/UI</h3>
-      <h3 id="eng" style="display: none;">Fronted Developer - UX/UI Designer</h3>
-      
-      <p id="esp">Mi nombre es Kevin Pizarro Sánchez, vivo en Santiago de Chile y tengo 28 años. 
+    <div class="about-content">
+      <h2 class="heading" >Sobre <span>Mi</span></h2>
+      <h3>Desarrollador Fronted - Diseñador UX/UI</h3>  
+      <p id="parrafo" class="limit-height">Mi nombre es Kevin Pizarro Sánchez, vivo en Santiago de Chile y tengo 28 años. 
         Comencé a estudiar desarrollo web al final de mi primer año en la universidad 
         en el instituto DUOC UC. Desde entonces, mi pasión por el desarrollo frontend 
         comenzó, y desde entonces he seguido estudiando, practicando y programando para 
@@ -121,99 +107,39 @@
         ingresar al mundo de la informática. Y poder utilizar el arte y la tecnología para crear 
         algo único y especial, tanto para desarrolladores como para usuarios, es una sensación muy 
         especial de poder entregar un proyecto funcional con mi propia identidad.</p>
-
-
-      <p id="eng" style="display: none;">My name is Kevin Pizarro Sánchez, I live in Santiago 
-        de Chile and I am 28 years old. I started studying Web development at the end of my 
-        first year of university at the DUOC UC institute. Since then my passion for Fronted 
-        development began, and since then I have I have kept studying, practicing and programming 
-        to be able to improve day by day.
-        <br>
-        
-        But I am not only dedicated to Fronted programming, I am also passionate about graphic 
-        design, so by myself I started to study how I could combine the skills of design and 
-        programming until I got to know UX/UI Design, which helped me in to a great extent to be 
-        able to achieve much more attractive designs in my projects, this together with the knowledge 
-        of being able to use programs such as Adobe Xd, Figma, and Sketch to be able to deliver works 
-        such as Mockups and interactive prototypes to clients.<br>
-
-        Since then I have dedicated myself to being able to study HTML, CSS, JavaScript and frameworks 
-        that help me achieve my goal of developing myself as a good Fronted programmer with a solid 
-        foundation in UX/UI knowledge.
-
-        But my knowledge does not only stop there, my other goal in my professional and personal career 
-        is to become a video game developer in his artistic area, since I have learned by myself the study 
-        and knowledge as a concept artist for the creation of characters, environments , scenery and 
-        decorative elements for projects such as comics, movies and video games, with the use of programs 
-        such as Adobe Photoshop, Adobe Illustrator, this has also helped me to develop graphic designer 
-        skills as mentioned above.
-
-        And as a final point, I also have skills in sculpture and 3D design, for the creation of props and 
-        visual elements for videogames and movies, all this thanks to the knowledge of using programs like 
-        Blender3D and Zbrush in their knowledge of intermediate and basic level respectively.
-        
-        I am an incredibly self-taught person, if I like something I look for the necessary tools to learn 
-        it, and if I can't find them, I create them myself to be able to reach the level and goal that I want. 
-        I consider myself someone very intelligent but I take my time to learn things, but someone with a lot 
-        of enthusiasm and positivity to enter the world of computing. And being able to use art and technology 
-        to create something unique and special, both for developers and users, is a very special feeling of 
-        being able to deliver a functional project with my own identity.
-      </p>
-
-      <a href="#" class="btn" id="esp">Leer mas</a>
-      <a href="#" class="btn" id="eng" style="display: none;">Read More</a>
+      <a href="#" class="btn" id="expand-btn" onclick="expandirParrafo()">Leer mas</a>
     </div>
   </section>
 
   <!-- Seccion de Servicios y habilidades -->
   <section class="services" id="services">
     <h2 class="heading" id="esp"> Mis <span>Servicios</span> & <span>Habilidades</span></h2>
-    <h2 class="heading" id="eng" style="display: none;"> My <span>Services</span> & <span>Skills</span></h2>
 
     <div class="services-container">
 
       <div class="services-box">
         <i class='bx bxs-devices'></i>
-
-        <h3 id="esp">Diseñador UX/UI</h3>
-        <h3 id="eng" style="display: none;">UX/UI Designer</h3>
-        
-        <p id="esp">Mi conocimiento en el área de <span>UX/UI</span> me permite trabajar con una amplia gama de herramientas dentro del desarrollo 
+        <h3>Diseñador UX/UI</h3>        
+        <p>Mi conocimiento en el área de <span>UX/UI</span> me permite trabajar con una amplia gama de herramientas dentro del desarrollo 
           de interfaces de usuario, utilizando conceptos básicos y avanzados en Experiencia de Usuario en <span>Adobe Xd</span>, <span>Figma</span> y 
           <span>Sketch</span>. También tengo la habilidad de desarrollar Mockups y prototipos interactivos, lo más fiel a lo que puede 
           lograr un desarrollador Fullstack o de software.
         </p>
 
-        <p id="eng" style="display: none;">My knowledge in the <span>UX/UI</span> area allows me to work with a wide range of 
-          tools within the development of user interfaces, using research basic concepts and advanced in User Experience in 
-          <span>Adobe Xd</span>, <span>Figma</span> and <span>Sketch</span> . Also the power to develop Mockups and interactive 
-          prototypes, the most faithful to what you can get a Fullstack or software developer.  
-        </p>
         <a href="https://www.behance.net/kevinpizarro1" class="btn" target="_blank" id="esp">Ir a Adobe Behance</a>
-        <a href="https://www.behance.net/kevinpizarro1" class="btn" target="_blank" id="eng" style="display: none;">Go Adobe Behance</a>
       </div>
 
       <div class="services-box">
         <i class='bx bx-code-alt' ></i>
 
-        <h3 id="esp">Desarrollador Web</h3>
-        <h3 id="eng" style="display: none;">Web Development</h3>
-        
-        <p id="esp">Tengo experiencia en lenguajes básicos como <span>HTML</span>, <span>CSS</span>
+        <h3>Desarrollador Web</h3>
+        <p>Tengo experiencia en lenguajes básicos como <span>HTML</span>, <span>CSS</span>
           y <span>Javascript</span>. También en frameworks como <span>React</span> y 
           <span>Angular</span>. Mi mayor objetivo es entregar más que un servicio, entregar
           una experiencia única para el cliente. Mi perfeccionismo me lleva a resolver y 
           entregar productos y servicios de excelente calidad.
         </p>
-        
-
-        <p id="eng" style="display: none;">I have experience in basic languages like 
-          <span>HTML CSS</span> and <span>Javascript</span>.As well as in frameworks 
-          like React, Angular. my biggest goal is to be able to deliver more than a 
-          service to deliver a unique experience for the client. My perfectionism 
-          leads me to solve and deliver products and services of excellent quality.
-        </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="#" class="btn">Leer mas</a>
       </div>
 
       <div class="services-box">
