@@ -47,11 +47,16 @@ window.addEventListener('resize', function() {
 /*----------------Extender parrafos----------------------*/
 
 const parrafo = document.getElementById('parrafo');
-const btnLeerMas = document.querySelector('expand-btn');
+const btnLeerMas = document.getElementById('expand-btn');
 
-btnLeerMas.addEventListener('click', function () {
-  parrafo.style.maxHeight = '100rem' ;
-});
+function expandirParrafo() {
+  parrafo.classList.toggle('expand');
+  if (parrafo.classList.contains('expand')){
+    btnLeerMas.textContent = 'Leer menos';
+  } else {
+    btnLeerMas.textContent = 'Leer más';
+  }
+}
 
 /*#################################################################*/
 /*----------------Seccion activa en el Scroll----------------------*/
