@@ -114,11 +114,3 @@ const typado = new Typed('.texto-multiple',{
     BackDelay: 100,
     loop: true
 });
-
-const typed = new Typed('.multiple-text',{
-    strings: ['Frontend Developer', 'UX/UI Designer', 'Concept Artist', '3D Modeler'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    BackDelay: 100,
-    loop: true
-});
